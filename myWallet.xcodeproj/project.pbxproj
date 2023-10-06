@@ -7,15 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75F47554AA324604F3ED561F /* Pods_myWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17B38D0CE6B96E9489FA95C /* Pods_myWallet.framework */; };
 		D32B7BCE2AD04337001436ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7BCD2AD04337001436ED /* AppDelegate.swift */; };
 		D32B7BD02AD04337001436ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7BCF2AD04337001436ED /* SceneDelegate.swift */; };
 		D32B7BD22AD04337001436ED /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7BD12AD04337001436ED /* WalletViewController.swift */; };
 		D32B7BD52AD04337001436ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BD32AD04337001436ED /* Main.storyboard */; };
 		D32B7BD72AD04338001436ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BD62AD04338001436ED /* Assets.xcassets */; };
 		D32B7BDA2AD04338001436ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BD82AD04338001436ED /* LaunchScreen.storyboard */; };
+		D32B7BE82AD048C2001436ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BE72AD048C2001436ED /* Localizable.strings */; };
+		D32B7BEB2AD04CF8001436ED /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7BEA2AD04CF8001436ED /* Strings+Generated.swift */; };
+		D32B7BED2AD0555C001436ED /* color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BEC2AD0555C001436ED /* color.xcassets */; };
+		D32B7BEF2AD055DF001436ED /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7BEE2AD055DF001436ED /* XCAssets+Generated.swift */; };
+		D32B7BFD2AD05A18001436ED /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7BFC2AD05A18001436ED /* Utilites.swift */; };
+		D32B7BFF2AD05A7D001436ED /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7BFE2AD05A7D001436ED /* UIView.swift */; };
+		D32B7C012AD05ACF001436ED /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C002AD05ACF001436ED /* color.swift */; };
+		D32B7C032AD07BA0001436ED /* Sora-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BF82AD058A5001436ED /* Sora-Bold.ttf */; };
+		D32B7C042AD07BAA001436ED /* Sora-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BF92AD058A5001436ED /* Sora-ExtraBold.ttf */; };
+		D32B7C052AD07BAC001436ED /* Sora-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BF62AD058A5001436ED /* Sora-ExtraLight.ttf */; };
+		D32B7C062AD07BAF001436ED /* Sora-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BF42AD058A5001436ED /* Sora-Light.ttf */; };
+		D32B7C072AD07BB1001436ED /* Sora-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BF32AD058A5001436ED /* Sora-Medium.ttf */; };
+		D32B7C082AD07BB4001436ED /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BFA2AD058A5001436ED /* Sora-Regular.ttf */; };
+		D32B7C092AD07BB7001436ED /* Sora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BF72AD058A5001436ED /* Sora-SemiBold.ttf */; };
+		D32B7C0A2AD07BB7001436ED /* Sora-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BF52AD058A5001436ED /* Sora-Thin.ttf */; };
+		D32B7C0F2AD083E1001436ED /* favouriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C0D2AD083E1001436ED /* favouriteCell.swift */; };
+		D32B7C102AD083E1001436ED /* favouriteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32B7C0E2AD083E1001436ED /* favouriteCell.xib */; };
+		D32B7C132AD086B0001436ED /* persionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C122AD086B0001436ED /* persionModel.swift */; };
+		D32B7C172AD08993001436ED /* transActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C152AD08993001436ED /* transActionCell.swift */; };
+		D32B7C182AD08993001436ED /* transActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32B7C162AD08993001436ED /* transActionCell.xib */; };
+		D32B7C1A2AD08CE1001436ED /* transActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C192AD08CE1001436ED /* transActionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB04C7895C653C375CC97482 /* Pods-myWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myWallet.release.xcconfig"; path = "Target Support Files/Pods-myWallet/Pods-myWallet.release.xcconfig"; sourceTree = "<group>"; };
+		D29CD4B74728A273632E7E18 /* Pods-myWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myWallet.debug.xcconfig"; path = "Target Support Files/Pods-myWallet/Pods-myWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		D32B7BCA2AD04337001436ED /* myWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32B7BCD2AD04337001436ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D32B7BCF2AD04337001436ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +48,28 @@
 		D32B7BD62AD04338001436ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D32B7BD92AD04338001436ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D32B7BDB2AD04338001436ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D32B7BE72AD048C2001436ED /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D32B7BEA2AD04CF8001436ED /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		D32B7BEC2AD0555C001436ED /* color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = color.xcassets; sourceTree = "<group>"; };
+		D32B7BEE2AD055DF001436ED /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		D32B7BF32AD058A5001436ED /* Sora-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Medium.ttf"; sourceTree = "<group>"; };
+		D32B7BF42AD058A5001436ED /* Sora-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Light.ttf"; sourceTree = "<group>"; };
+		D32B7BF52AD058A5001436ED /* Sora-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Thin.ttf"; sourceTree = "<group>"; };
+		D32B7BF62AD058A5001436ED /* Sora-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D32B7BF72AD058A5001436ED /* Sora-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-SemiBold.ttf"; sourceTree = "<group>"; };
+		D32B7BF82AD058A5001436ED /* Sora-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Bold.ttf"; sourceTree = "<group>"; };
+		D32B7BF92AD058A5001436ED /* Sora-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D32B7BFA2AD058A5001436ED /* Sora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Regular.ttf"; sourceTree = "<group>"; };
+		D32B7BFC2AD05A18001436ED /* Utilites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
+		D32B7BFE2AD05A7D001436ED /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		D32B7C002AD05ACF001436ED /* color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = color.swift; sourceTree = "<group>"; };
+		D32B7C0D2AD083E1001436ED /* favouriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favouriteCell.swift; sourceTree = "<group>"; };
+		D32B7C0E2AD083E1001436ED /* favouriteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = favouriteCell.xib; sourceTree = "<group>"; };
+		D32B7C122AD086B0001436ED /* persionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = persionModel.swift; sourceTree = "<group>"; };
+		D32B7C152AD08993001436ED /* transActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transActionCell.swift; sourceTree = "<group>"; };
+		D32B7C162AD08993001436ED /* transActionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transActionCell.xib; sourceTree = "<group>"; };
+		D32B7C192AD08CE1001436ED /* transActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transActionModel.swift; sourceTree = "<group>"; };
+		F17B38D0CE6B96E9489FA95C /* Pods_myWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +77,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F47554AA324604F3ED561F /* Pods_myWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0366C3B597DE5B16AC22E14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D29CD4B74728A273632E7E18 /* Pods-myWallet.debug.xcconfig */,
+				BB04C7895C653C375CC97482 /* Pods-myWallet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C38BCE0CE71A73D72B79C2A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F17B38D0CE6B96E9489FA95C /* Pods_myWallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D32B7BC12AD04337001436ED = {
 			isa = PBXGroup;
 			children = (
 				D32B7BCC2AD04337001436ED /* myWallet */,
 				D32B7BCB2AD04337001436ED /* Products */,
+				B0366C3B597DE5B16AC22E14 /* Pods */,
+				C38BCE0CE71A73D72B79C2A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +124,12 @@
 			children = (
 				D32B7BE12AD0435C001436ED /* App Delegate */,
 				D32B7BE32AD04374001436ED /* launch Screen */,
+				D32B7C112AD086A1001436ED /* model */,
 				D32B7BE22AD0436C001436ED /* Controller */,
 				D32B7BE52AD043DB001436ED /* Screens */,
+				D32B7C0B2AD083B1001436ED /* Cells */,
+				D32B7BFB2AD059B8001436ED /* UICustoms + Extensions */,
+				D32B7BE92AD048DA001436ED /* constans */,
 				D32B7BE42AD04383001436ED /* Assets */,
 			);
 			path = myWallet;
@@ -93,7 +163,10 @@
 		D32B7BE42AD04383001436ED /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D32B7BF12AD05894001436ED /* font */,
+				D32B7BE62AD048B5001436ED /* localizable */,
 				D32B7BD62AD04338001436ED /* Assets.xcassets */,
+				D32B7BEC2AD0555C001436ED /* color.xcassets */,
 				D32B7BDB2AD04338001436ED /* Info.plist */,
 			);
 			path = Assets;
@@ -107,6 +180,92 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		D32B7BE62AD048B5001436ED /* localizable */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7BE72AD048C2001436ED /* Localizable.strings */,
+			);
+			path = localizable;
+			sourceTree = "<group>";
+		};
+		D32B7BE92AD048DA001436ED /* constans */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7BEA2AD04CF8001436ED /* Strings+Generated.swift */,
+				D32B7BEE2AD055DF001436ED /* XCAssets+Generated.swift */,
+			);
+			path = constans;
+			sourceTree = "<group>";
+		};
+		D32B7BF12AD05894001436ED /* font */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7BF22AD0589A001436ED /* Sora */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		D32B7BF22AD0589A001436ED /* Sora */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7BF82AD058A5001436ED /* Sora-Bold.ttf */,
+				D32B7BF92AD058A5001436ED /* Sora-ExtraBold.ttf */,
+				D32B7BF62AD058A5001436ED /* Sora-ExtraLight.ttf */,
+				D32B7BF42AD058A5001436ED /* Sora-Light.ttf */,
+				D32B7BF32AD058A5001436ED /* Sora-Medium.ttf */,
+				D32B7BFA2AD058A5001436ED /* Sora-Regular.ttf */,
+				D32B7BF72AD058A5001436ED /* Sora-SemiBold.ttf */,
+				D32B7BF52AD058A5001436ED /* Sora-Thin.ttf */,
+			);
+			path = Sora;
+			sourceTree = "<group>";
+		};
+		D32B7BFB2AD059B8001436ED /* UICustoms + Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7C002AD05ACF001436ED /* color.swift */,
+				D32B7BFC2AD05A18001436ED /* Utilites.swift */,
+				D32B7BFE2AD05A7D001436ED /* UIView.swift */,
+			);
+			path = "UICustoms + Extensions";
+			sourceTree = "<group>";
+		};
+		D32B7C0B2AD083B1001436ED /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7C142AD08971001436ED /* transAction Cell */,
+				D32B7C0C2AD083C0001436ED /* Favourite transAction */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D32B7C0C2AD083C0001436ED /* Favourite transAction */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7C0D2AD083E1001436ED /* favouriteCell.swift */,
+				D32B7C0E2AD083E1001436ED /* favouriteCell.xib */,
+			);
+			path = "Favourite transAction";
+			sourceTree = "<group>";
+		};
+		D32B7C112AD086A1001436ED /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7C122AD086B0001436ED /* persionModel.swift */,
+				D32B7C192AD08CE1001436ED /* transActionModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D32B7C142AD08971001436ED /* transAction Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7C152AD08993001436ED /* transActionCell.swift */,
+				D32B7C162AD08993001436ED /* transActionCell.xib */,
+			);
+			path = "transAction Cell";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D32B7BDE2AD04338001436ED /* Build configuration list for PBXNativeTarget "myWallet" */;
 			buildPhases = (
+				2E3978D33182455795203A12 /* [CP] Check Pods Manifest.lock */,
+				D32B7BF02AD056A2001436ED /* swiftGen */,
 				D32B7BC62AD04337001436ED /* Sources */,
 				D32B7BC72AD04337001436ED /* Frameworks */,
 				D32B7BC82AD04337001436ED /* Resources */,
+				5ECACCE49F06A6920BDD9B3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,20 +328,101 @@
 			buildActionMask = 2147483647;
 			files = (
 				D32B7BDA2AD04338001436ED /* LaunchScreen.storyboard in Resources */,
+				D32B7BE82AD048C2001436ED /* Localizable.strings in Resources */,
+				D32B7BED2AD0555C001436ED /* color.xcassets in Resources */,
 				D32B7BD72AD04338001436ED /* Assets.xcassets in Resources */,
+				D32B7C032AD07BA0001436ED /* Sora-Bold.ttf in Resources */,
+				D32B7C062AD07BAF001436ED /* Sora-Light.ttf in Resources */,
+				D32B7C072AD07BB1001436ED /* Sora-Medium.ttf in Resources */,
+				D32B7C102AD083E1001436ED /* favouriteCell.xib in Resources */,
+				D32B7C0A2AD07BB7001436ED /* Sora-Thin.ttf in Resources */,
+				D32B7C052AD07BAC001436ED /* Sora-ExtraLight.ttf in Resources */,
+				D32B7C082AD07BB4001436ED /* Sora-Regular.ttf in Resources */,
+				D32B7C042AD07BAA001436ED /* Sora-ExtraBold.ttf in Resources */,
+				D32B7C182AD08993001436ED /* transActionCell.xib in Resources */,
+				D32B7C092AD07BB7001436ED /* Sora-SemiBold.ttf in Resources */,
 				D32B7BD52AD04337001436ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E3978D33182455795203A12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ECACCE49F06A6920BDD9B3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myWallet/Pods-myWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myWallet/Pods-myWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-myWallet/Pods-myWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D32B7BF02AD056A2001436ED /* swiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D32B7BC62AD04337001436ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32B7C1A2AD08CE1001436ED /* transActionModel.swift in Sources */,
+				D32B7C0F2AD083E1001436ED /* favouriteCell.swift in Sources */,
+				D32B7BEF2AD055DF001436ED /* XCAssets+Generated.swift in Sources */,
+				D32B7C132AD086B0001436ED /* persionModel.swift in Sources */,
 				D32B7BD22AD04337001436ED /* WalletViewController.swift in Sources */,
 				D32B7BCE2AD04337001436ED /* AppDelegate.swift in Sources */,
+				D32B7BFF2AD05A7D001436ED /* UIView.swift in Sources */,
+				D32B7BEB2AD04CF8001436ED /* Strings+Generated.swift in Sources */,
+				D32B7C012AD05ACF001436ED /* color.swift in Sources */,
+				D32B7BFD2AD05A18001436ED /* Utilites.swift in Sources */,
+				D32B7C172AD08993001436ED /* transActionCell.swift in Sources */,
 				D32B7BD02AD04337001436ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +565,7 @@
 		};
 		D32B7BDF2AD04338001436ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D29CD4B74728A273632E7E18 /* Pods-myWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -354,6 +598,7 @@
 		};
 		D32B7BE02AD04338001436ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB04C7895C653C375CC97482 /* Pods-myWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
