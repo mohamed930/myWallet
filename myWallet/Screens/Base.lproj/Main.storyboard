@@ -410,14 +410,14 @@ View all</string>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="TeR-PH-703"/>
                         <segue destination="o9P-eJ-Zje" kind="relationship" relationship="viewControllers" id="g5s-6h-CAA"/>
-                        <segue destination="xGY-qI-GIF" kind="relationship" relationship="viewControllers" id="gB0-f2-YTU"/>
+                        <segue destination="bfA-b8-cYZ" kind="relationship" relationship="viewControllers" id="gB0-f2-YTU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEO-5A-TFR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="880" y="-796"/>
         </scene>
-        <!--More-->
+        <!--More View Controller-->
         <scene sceneID="Su9-pd-1K9">
             <objects>
                 <viewController storyboardIdentifier="moreViewController" id="xGY-qI-GIF" customClass="moreViewController" customModule="myWallet" customModuleProvider="target" sceneMemberID="viewController">
@@ -426,13 +426,13 @@ View all</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNX-7b-EyW">
-                                <rect key="frame" x="16" y="48" width="64" height="30.5"/>
+                                <rect key="frame" x="16" y="92" width="64" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Sora-SemiBold" family="Sora" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3nC-YE-uo3">
-                                <rect key="frame" x="16" y="102.5" width="382" height="203"/>
+                                <rect key="frame" x="16" y="146.5" width="382" height="203"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4s-Wu-F8x">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="32"/>
@@ -613,14 +613,14 @@ View all</string>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QxW-h3-i88">
-                                <rect key="frame" x="0.0" y="329.5" width="414" height="6"/>
+                                <rect key="frame" x="0.0" y="373.5" width="414" height="6"/>
                                 <color key="backgroundColor" name="Alice Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="6" id="re8-h0-8fq"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="nLv-lX-TMC">
-                                <rect key="frame" x="16" y="359.5" width="382" height="146"/>
+                                <rect key="frame" x="16" y="403.5" width="382" height="146"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehE-FU-rY9">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="32"/>
@@ -774,9 +774,73 @@ View all</string>
                             <constraint firstItem="uNX-7b-EyW" firstAttribute="top" secondItem="rLw-fT-ILL" secondAttribute="top" id="z98-PO-SGf"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="More" image="bank-card-2-line" selectedImage="bank-card-2-fill" id="fC3-rU-gNx"/>
+                    <navigationItem key="navigationItem" id="TUr-HX-RvV"/>
+                    <connections>
+                        <outlet property="aboutUsView" destination="TSU-11-eUH" id="eN1-KU-yZ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBH-Ro-yYk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2539.130434782609" y="-36.160714285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5te-VN-uQV">
+            <objects>
+                <viewController storyboardIdentifier="aboutUsVC" id="y7v-Sk-71L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="986-lL-Uh0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About eWallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5D-4T-rWy">
+                                <rect key="frame" x="16" y="98" width="174" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Sora-Regular" family="Sora" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUX-Bs-DdF">
+                                <rect key="frame" x="16" y="168.5" width="382" height="265"/>
+                                <mutableString key="text">Our app allows you to easily store, manage, and spend your money on the go. With our secure platform, you can make transactions, check your balance, and track your spending all in one place.
+
+Whether you're paying bills, shopping online, or sending money to friends and family, our app makes it easy and convenient to do so. Plus, with our various promotions and discounts, you can save even more while using our app.
+
+Thank you for choosing us as your preferred e-wallet solution. If you have any questions or feedback, please don't hesitate to contact us. We're always here to help.</mutableString>
+                                <fontDescription key="fontDescription" name="Sora-Regular" family="Sora" pointSize="14"/>
+                                <color key="textColor" name="Black Coral"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qVN-0G-hKL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q5D-4T-rWy" firstAttribute="leading" secondItem="qVN-0G-hKL" secondAttribute="leading" constant="16" id="DDO-OP-P95"/>
+                            <constraint firstItem="qVN-0G-hKL" firstAttribute="trailing" secondItem="GUX-Bs-DdF" secondAttribute="trailing" constant="16" id="Qml-5d-lPq"/>
+                            <constraint firstItem="GUX-Bs-DdF" firstAttribute="top" secondItem="Q5D-4T-rWy" secondAttribute="bottom" constant="40" id="beC-6B-L9d"/>
+                            <constraint firstItem="Q5D-4T-rWy" firstAttribute="top" secondItem="qVN-0G-hKL" secondAttribute="top" constant="50" id="m5r-lw-2qh"/>
+                            <constraint firstItem="GUX-Bs-DdF" firstAttribute="leading" secondItem="qVN-0G-hKL" secondAttribute="leading" constant="16" id="zdb-CI-eIR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olq-f2-bfz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3388" y="-36"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="Bej-Ox-wi5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bfA-b8-cYZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="More" image="bank-card-2-line" selectedImage="bank-card-2-fill" id="fC3-rU-gNx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cnq-jW-Qsv">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xGY-qI-GIF" kind="relationship" relationship="rootViewController" id="H0e-b7-hve"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VjE-tC-Etu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1628.985507246377" y="-36.160714285714285"/>
         </scene>
@@ -807,6 +871,9 @@ View all</string>
         </namedColor>
         <namedColor name="Azureish White">
             <color red="0.88200002908706665" green="0.88999998569488525" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Black Coral">
+            <color red="0.32549019607843138" green="0.36470588235294116" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Indigo">
             <color red="0.15299999713897705" green="0.024000000208616257" blue="0.5220000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
