@@ -12,5 +12,6 @@ target 'myWallet' do
   pod 'RealmSwift'
   pod 'SwiftGen'
   pod 'IQKeyboardManagerSwift'
+  pod 'FittedSheets'
 
 end

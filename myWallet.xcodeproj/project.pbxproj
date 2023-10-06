@@ -37,6 +37,8 @@
 		D32B7C1A2AD08CE1001436ED /* transActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C192AD08CE1001436ED /* transActionModel.swift */; };
 		D32B7C1C2AD092BB001436ED /* transActionsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C1B2AD092BB001436ED /* transActionsHistoryViewController.swift */; };
 		D32B7C1E2AD095CF001436ED /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C1D2AD095CF001436ED /* UITextField.swift */; };
+		D32B7C222AD0A7C3001436ED /* transActionDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C202AD0A7C3001436ED /* transActionDetailsController.swift */; };
+		D32B7C232AD0A7C3001436ED /* transActionDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32B7C212AD0A7C3001436ED /* transActionDetailsController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,8 @@
 		D32B7C192AD08CE1001436ED /* transActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transActionModel.swift; sourceTree = "<group>"; };
 		D32B7C1B2AD092BB001436ED /* transActionsHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transActionsHistoryViewController.swift; sourceTree = "<group>"; };
 		D32B7C1D2AD095CF001436ED /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		D32B7C202AD0A7C3001436ED /* transActionDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transActionDetailsController.swift; sourceTree = "<group>"; };
+		D32B7C212AD0A7C3001436ED /* transActionDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transActionDetailsController.xib; sourceTree = "<group>"; };
 		F17B38D0CE6B96E9489FA95C /* Pods_myWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,6 +136,7 @@
 				D32B7BE22AD0436C001436ED /* Controller */,
 				D32B7BE52AD043DB001436ED /* Screens */,
 				D32B7C0B2AD083B1001436ED /* Cells */,
+				D32B7C1F2AD0A7A5001436ED /* Custom Sheet */,
 				D32B7BFB2AD059B8001436ED /* UICustoms + Extensions */,
 				D32B7BE92AD048DA001436ED /* constans */,
 				D32B7BE42AD04383001436ED /* Assets */,
@@ -272,6 +277,15 @@
 			path = "transAction Cell";
 			sourceTree = "<group>";
 		};
+		D32B7C1F2AD0A7A5001436ED /* Custom Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7C202AD0A7C3001436ED /* transActionDetailsController.swift */,
+				D32B7C212AD0A7C3001436ED /* transActionDetailsController.xib */,
+			);
+			path = "Custom Sheet";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,6 +349,7 @@
 			files = (
 				D32B7BDA2AD04338001436ED /* LaunchScreen.storyboard in Resources */,
 				D32B7BE82AD048C2001436ED /* Localizable.strings in Resources */,
+				D32B7C232AD0A7C3001436ED /* transActionDetailsController.xib in Resources */,
 				D32B7BED2AD0555C001436ED /* color.xcassets in Resources */,
 				D32B7BD72AD04338001436ED /* Assets.xcassets in Resources */,
 				D32B7C032AD07BA0001436ED /* Sora-Bold.ttf in Resources */,
@@ -426,6 +441,7 @@
 				D32B7BCE2AD04337001436ED /* AppDelegate.swift in Sources */,
 				D32B7BFF2AD05A7D001436ED /* UIView.swift in Sources */,
 				D32B7BEB2AD04CF8001436ED /* Strings+Generated.swift in Sources */,
+				D32B7C222AD0A7C3001436ED /* transActionDetailsController.swift in Sources */,
 				D32B7C012AD05ACF001436ED /* color.swift in Sources */,
 				D32B7C1E2AD095CF001436ED /* UITextField.swift in Sources */,
 				D32B7C1C2AD092BB001436ED /* transActionsHistoryViewController.swift in Sources */,

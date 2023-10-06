@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FittedSheets
 
 class transActionsHistoryViewController: UIViewController {
     
@@ -64,26 +65,50 @@ extension transActionsHistoryViewController: UITableViewDelegate, UITableViewDat
         return cell
     }
     
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        if section == numberOfSections(in: tableView) - 1 {
-            // Create a custom footer view
-            let customFooterView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 4))
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let obj = arr[indexPath.row]
+        
+        let sheet = transActionDetailsController(nibName: "transActionDetailsController", bundle: nil)
+        
+        let options = SheetOptions(
+            // The full height of the pull bar. The presented view controller will treat this area as a safearea inset on the top
+            pullBarHeight: 24,
             
-            // Add a line as a subview with the desired line width
-            let lineView = UIView(frame: CGRect(x: 0, y: 0, width: 4, height: 4))
-            lineView.backgroundColor = .black // Customize the line color
-            customFooterView.addSubview(lineView)
+            // The corner radius of the shrunken presenting view controller
+            presentingViewCornerRadius: 20,
             
-            return customFooterView
-        }
-        return nil
-    }
-
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        if section == numberOfSections(in: tableView) - 1 {
-            // Return the desired height for the custom footer view
-            return 4
-        }
-        return 0
+            // Extends the background behind the pull bar or not
+            shouldExtendBackground: true,
+            
+            // Attempts to use intrinsic heights on navigation controllers. This does not work well in combination with keyboards without your code handling it.
+            setIntrinsicHeightOnNavigationControllers: true,
+            
+            // Pulls the view controller behind the safe area top, especially useful when embedding navigation controllers
+            useFullScreenMode: true,
+            
+            // Shrinks the presenting view controller, similar to the native modal
+            shrinkPresentingViewController: true,
+            
+            // Determines if using inline mode or not
+            useInlineMode: false,
+            
+            // Adds a padding on the left and right of the sheet with this amount. Defaults to zero (no padding)
+            horizontalPadding: 0,
+            
+            // Sets the maximum width allowed for the sheet. This defaults to nil and doesn't limit the width.
+            maxWidth: nil
+        )
+        
+        let sheetController = SheetViewController(controller: sheet,
+                                                  sizes: [.fixed(411)],
+                                                  options: options
+        )
+        
+        
+        sheetController.cornerCurve = .continuous
+        sheetController.cornerRadius = 16
+        sheetController.minimumSpaceAbovePullBar = 0
+        
+        self.present(sheetController, animated: false)
     }
 }
