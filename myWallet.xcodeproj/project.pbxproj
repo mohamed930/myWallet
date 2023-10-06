@@ -35,6 +35,8 @@
 		D32B7C172AD08993001436ED /* transActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C152AD08993001436ED /* transActionCell.swift */; };
 		D32B7C182AD08993001436ED /* transActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32B7C162AD08993001436ED /* transActionCell.xib */; };
 		D32B7C1A2AD08CE1001436ED /* transActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C192AD08CE1001436ED /* transActionModel.swift */; };
+		D32B7C1C2AD092BB001436ED /* transActionsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C1B2AD092BB001436ED /* transActionsHistoryViewController.swift */; };
+		D32B7C1E2AD095CF001436ED /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C1D2AD095CF001436ED /* UITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		D32B7C152AD08993001436ED /* transActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transActionCell.swift; sourceTree = "<group>"; };
 		D32B7C162AD08993001436ED /* transActionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transActionCell.xib; sourceTree = "<group>"; };
 		D32B7C192AD08CE1001436ED /* transActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transActionModel.swift; sourceTree = "<group>"; };
+		D32B7C1B2AD092BB001436ED /* transActionsHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transActionsHistoryViewController.swift; sourceTree = "<group>"; };
+		D32B7C1D2AD095CF001436ED /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		F17B38D0CE6B96E9489FA95C /* Pods_myWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				D32B7BD12AD04337001436ED /* WalletViewController.swift */,
+				D32B7C1B2AD092BB001436ED /* transActionsHistoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 		D32B7BFB2AD059B8001436ED /* UICustoms + Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D32B7C1D2AD095CF001436ED /* UITextField.swift */,
 				D32B7C002AD05ACF001436ED /* color.swift */,
 				D32B7BFC2AD05A18001436ED /* Utilites.swift */,
 				D32B7BFE2AD05A7D001436ED /* UIView.swift */,
@@ -421,6 +427,8 @@
 				D32B7BFF2AD05A7D001436ED /* UIView.swift in Sources */,
 				D32B7BEB2AD04CF8001436ED /* Strings+Generated.swift in Sources */,
 				D32B7C012AD05ACF001436ED /* color.swift in Sources */,
+				D32B7C1E2AD095CF001436ED /* UITextField.swift in Sources */,
+				D32B7C1C2AD092BB001436ED /* transActionsHistoryViewController.swift in Sources */,
 				D32B7BFD2AD05A18001436ED /* Utilites.swift in Sources */,
 				D32B7C172AD08993001436ED /* transActionCell.swift in Sources */,
 				D32B7BD02AD04337001436ED /* SceneDelegate.swift in Sources */,
