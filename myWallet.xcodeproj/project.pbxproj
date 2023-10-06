@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D32B7BCE2AD04337001436ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7BCD2AD04337001436ED /* AppDelegate.swift */; };
 		D32B7BD02AD04337001436ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7BCF2AD04337001436ED /* SceneDelegate.swift */; };
-		D32B7BD22AD04337001436ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7BD12AD04337001436ED /* ViewController.swift */; };
+		D32B7BD22AD04337001436ED /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7BD12AD04337001436ED /* WalletViewController.swift */; };
 		D32B7BD52AD04337001436ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BD32AD04337001436ED /* Main.storyboard */; };
 		D32B7BD72AD04338001436ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BD62AD04338001436ED /* Assets.xcassets */; };
 		D32B7BDA2AD04338001436ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32B7BD82AD04338001436ED /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		D32B7BCA2AD04337001436ED /* myWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32B7BCD2AD04337001436ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D32B7BCF2AD04337001436ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D32B7BD12AD04337001436ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D32B7BD12AD04337001436ED /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		D32B7BD42AD04337001436ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D32B7BD62AD04338001436ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D32B7BD92AD04338001436ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,55 @@
 		D32B7BCC2AD04337001436ED /* myWallet */ = {
 			isa = PBXGroup;
 			children = (
-				D32B7BCD2AD04337001436ED /* AppDelegate.swift */,
-				D32B7BCF2AD04337001436ED /* SceneDelegate.swift */,
-				D32B7BD12AD04337001436ED /* ViewController.swift */,
-				D32B7BD32AD04337001436ED /* Main.storyboard */,
-				D32B7BD62AD04338001436ED /* Assets.xcassets */,
-				D32B7BD82AD04338001436ED /* LaunchScreen.storyboard */,
-				D32B7BDB2AD04338001436ED /* Info.plist */,
+				D32B7BE12AD0435C001436ED /* App Delegate */,
+				D32B7BE32AD04374001436ED /* launch Screen */,
+				D32B7BE22AD0436C001436ED /* Controller */,
+				D32B7BE52AD043DB001436ED /* Screens */,
+				D32B7BE42AD04383001436ED /* Assets */,
 			);
 			path = myWallet;
+			sourceTree = "<group>";
+		};
+		D32B7BE12AD0435C001436ED /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7BCD2AD04337001436ED /* AppDelegate.swift */,
+				D32B7BCF2AD04337001436ED /* SceneDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		D32B7BE22AD0436C001436ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7BD12AD04337001436ED /* WalletViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D32B7BE32AD04374001436ED /* launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7BD82AD04338001436ED /* LaunchScreen.storyboard */,
+			);
+			path = "launch Screen";
+			sourceTree = "<group>";
+		};
+		D32B7BE42AD04383001436ED /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7BD62AD04338001436ED /* Assets.xcassets */,
+				D32B7BDB2AD04338001436ED /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		D32B7BE52AD043DB001436ED /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7BD32AD04337001436ED /* Main.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D32B7BD22AD04337001436ED /* ViewController.swift in Sources */,
+				D32B7BD22AD04337001436ED /* WalletViewController.swift in Sources */,
 				D32B7BCE2AD04337001436ED /* AppDelegate.swift in Sources */,
 				D32B7BD02AD04337001436ED /* SceneDelegate.swift in Sources */,
 			);
@@ -289,12 +329,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X4YZSY77G5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = myWallet/Info.plist;
+				INFOPLIST_FILE = myWallet/Assets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +343,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.myorganization199.myWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +361,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X4YZSY77G5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = myWallet/Info.plist;
+				INFOPLIST_FILE = myWallet/Assets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +375,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.myorganization199.myWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
