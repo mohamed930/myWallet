@@ -39,6 +39,7 @@
 		D32B7C1E2AD095CF001436ED /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C1D2AD095CF001436ED /* UITextField.swift */; };
 		D32B7C222AD0A7C3001436ED /* transActionDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C202AD0A7C3001436ED /* transActionDetailsController.swift */; };
 		D32B7C232AD0A7C3001436ED /* transActionDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32B7C212AD0A7C3001436ED /* transActionDetailsController.xib */; };
+		D32B7C252AD0B473001436ED /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C242AD0B473001436ED /* moreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		D32B7C1D2AD095CF001436ED /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		D32B7C202AD0A7C3001436ED /* transActionDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transActionDetailsController.swift; sourceTree = "<group>"; };
 		D32B7C212AD0A7C3001436ED /* transActionDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transActionDetailsController.xib; sourceTree = "<group>"; };
+		D32B7C242AD0B473001436ED /* moreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
 		F17B38D0CE6B96E9489FA95C /* Pods_myWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 			children = (
 				D32B7BD12AD04337001436ED /* WalletViewController.swift */,
 				D32B7C1B2AD092BB001436ED /* transActionsHistoryViewController.swift */,
+				D32B7C242AD0B473001436ED /* moreViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				D32B7BEF2AD055DF001436ED /* XCAssets+Generated.swift in Sources */,
 				D32B7C132AD086B0001436ED /* persionModel.swift in Sources */,
 				D32B7BD22AD04337001436ED /* WalletViewController.swift in Sources */,
+				D32B7C252AD0B473001436ED /* moreViewController.swift in Sources */,
 				D32B7BCE2AD04337001436ED /* AppDelegate.swift in Sources */,
 				D32B7BFF2AD05A7D001436ED /* UIView.swift in Sources */,
 				D32B7BEB2AD04CF8001436ED /* Strings+Generated.swift in Sources */,
