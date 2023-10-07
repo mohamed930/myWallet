@@ -9,6 +9,7 @@ import UIKit
 
 class moreViewController: UIViewController {
     
+    @IBOutlet weak var billView:UIView!
     @IBOutlet weak var aboutUsView: UIView!
 
     override func viewDidLoad() {
@@ -16,6 +17,7 @@ class moreViewController: UIViewController {
         
 //        navigationController?.isNavigationBarHidden = true
         addTapGuesterAboutUs()
+        addTapGuesterPayBill()
     }
     
     
@@ -31,6 +33,19 @@ class moreViewController: UIViewController {
     @objc func handleMore() {
         guard let nextVc = self.storyboard?.instantiateViewController(withIdentifier: "aboutUsVC") else { return }
         navigationController?.pushViewController(nextVc, animated: true)
-//        present(nextVc, animated: true)rrrrrr
+    }
+    
+    func addTapGuesterPayBill() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleBill))
+        tap.numberOfTapsRequired = 1
+        billView.isUserInteractionEnabled = true
+        
+        billView.addGestureRecognizer(tap)
+    }
+    
+    @objc func handleBill() {
+        let story = UIStoryboard(name: "payBillView", bundle: nil)
+        guard let nextVc: allBillsViewController = story.instantiateViewController(withIdentifier: "allBillsViewController") as? allBillsViewController else { return }
+        navigationController?.pushViewController(nextVc, animated: true)
     }
 }

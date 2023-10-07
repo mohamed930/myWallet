@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sora-Regular.ttf">
+            <string>Sora-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--All Bills View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="allBillsViewController" id="Y6W-OH-hqX" customClass="allBillsViewController" customModule="myWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLc-JX-33d">
+                                <rect key="frame" x="16" y="117" width="74" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Sora-Regular" family="Sora" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="t56-Rf-ewG">
+                                <rect key="frame" x="16" y="255.5" width="382" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="BON-rV-G6R"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ET-Xe-xCR">
+                                <rect key="frame" x="16" y="289.5" width="382" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Hlc-7n-8nE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Silver Sand"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="XD9-f8-tg4">
+                                <rect key="frame" x="28" y="297.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="22U-rv-v78"/>
+                                    <constraint firstAttribute="height" constant="20" id="dn0-fZ-cTY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved billers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXA-yM-FOt">
+                                <rect key="frame" x="16" y="341.5" width="78" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Sora-Regular" family="Sora" pointSize="12"/>
+                                <color key="textColor" name="Black Coral"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FiC-vo-dp5">
+                                <rect key="frame" x="16" y="369" width="382" height="477"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="6HO-ZF-2ja"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="7Dv-Qh-TC9"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eg-YO-c8a">
+                                <rect key="frame" x="0.0" y="187.5" width="414" height="52"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add" translatesAutoresizingMaskIntoConstraints="NO" id="gYP-zc-0nc">
+                                        <rect key="frame" x="16" y="2" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gYP-zc-0nc" secondAttribute="height" multiplier="1:1" id="K9t-X3-Hta"/>
+                                            <constraint firstAttribute="width" constant="48" id="Tzi-2R-xLY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New biller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Se9-gM-D2v">
+                                        <rect key="frame" x="72" y="18.5" width="61.5" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="Sora-Regular" family="Sora" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gYP-zc-0nc" firstAttribute="top" secondItem="8eg-YO-c8a" secondAttribute="top" constant="2" id="75g-7K-fnO"/>
+                                    <constraint firstItem="gYP-zc-0nc" firstAttribute="leading" secondItem="8eg-YO-c8a" secondAttribute="leading" constant="16" id="C4X-HH-2sy"/>
+                                    <constraint firstAttribute="bottom" secondItem="gYP-zc-0nc" secondAttribute="bottom" constant="2" id="Lb0-BS-iLO"/>
+                                    <constraint firstItem="Se9-gM-D2v" firstAttribute="leading" secondItem="gYP-zc-0nc" secondAttribute="trailing" constant="8" id="M5A-aV-h0n"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Se9-gM-D2v" secondAttribute="trailing" constant="8" id="SbH-dB-hCS"/>
+                                    <constraint firstItem="Se9-gM-D2v" firstAttribute="centerY" secondItem="gYP-zc-0nc" secondAttribute="centerY" id="lpG-A7-8Rk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MLc-JX-33d" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="7hU-1l-COh"/>
+                            <constraint firstItem="1ET-Xe-xCR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="AXf-ma-hEi"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8eg-YO-c8a" secondAttribute="trailing" id="Guu-cz-HKA"/>
+                            <constraint firstItem="FXA-yM-FOt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="IGw-jS-qCJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="t56-Rf-ewG" secondAttribute="trailing" constant="16" id="LJZ-3m-1ve"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="FiC-vo-dp5" secondAttribute="bottom" constant="16" id="Ldr-B7-m0u"/>
+                            <constraint firstItem="8eg-YO-c8a" firstAttribute="top" secondItem="MLc-JX-33d" secondAttribute="bottom" constant="40" id="PCe-9U-g9P"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FXA-yM-FOt" secondAttribute="trailing" constant="16" id="TjG-xR-Yac"/>
+                            <constraint firstItem="t56-Rf-ewG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="VLr-Uc-2Cb"/>
+                            <constraint firstItem="FXA-yM-FOt" firstAttribute="top" secondItem="1ET-Xe-xCR" secondAttribute="bottom" constant="16" id="W4W-Bk-REY"/>
+                            <constraint firstItem="XD9-f8-tg4" firstAttribute="leading" secondItem="1ET-Xe-xCR" secondAttribute="leading" constant="12" id="Wbh-aS-rGd"/>
+                            <constraint firstItem="1ET-Xe-xCR" firstAttribute="top" secondItem="t56-Rf-ewG" secondAttribute="bottom" constant="16" id="XpF-us-3Vs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FiC-vo-dp5" secondAttribute="trailing" constant="16" id="bNx-Oz-1cY"/>
+                            <constraint firstItem="t56-Rf-ewG" firstAttribute="top" secondItem="8eg-YO-c8a" secondAttribute="bottom" constant="16" id="dEF-iH-aGV"/>
+                            <constraint firstItem="FiC-vo-dp5" firstAttribute="top" secondItem="FXA-yM-FOt" secondAttribute="bottom" constant="12" id="hBY-6j-GrS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1ET-Xe-xCR" secondAttribute="trailing" constant="16" id="pds-ew-V05"/>
+                            <constraint firstItem="FiC-vo-dp5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="qUZ-fi-GCv"/>
+                            <constraint firstItem="8eg-YO-c8a" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rDq-zb-bKu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MLc-JX-33d" secondAttribute="trailing" constant="16" id="sM0-CW-GXY"/>
+                            <constraint firstItem="XD9-f8-tg4" firstAttribute="centerY" secondItem="1ET-Xe-xCR" secondAttribute="centerY" id="tF4-eg-963"/>
+                            <constraint firstItem="MLc-JX-33d" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="69" id="uo6-hg-8qE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchTextField" destination="1ET-Xe-xCR" id="rEh-O7-iKD"/>
+                        <outlet property="tableView" destination="FiC-vo-dp5" id="FkA-aj-ace"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="-27.455357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Add" width="192" height="192"/>
+        <image name="Divider" width="984" height="54"/>
+        <image name="search" width="48" height="48"/>
+        <namedColor name="Black Coral">
+            <color red="0.32499998807907104" green="0.36500000953674316" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Silver Sand">
+            <color red="0.72899997234344482" green="0.76099997758865356" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

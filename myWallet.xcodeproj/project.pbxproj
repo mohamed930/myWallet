@@ -38,9 +38,14 @@
 		D32B7C222AD0A7C3001436ED /* transActionDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C202AD0A7C3001436ED /* transActionDetailsController.swift */; };
 		D32B7C232AD0A7C3001436ED /* transActionDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32B7C212AD0A7C3001436ED /* transActionDetailsController.xib */; };
 		D32B7C252AD0B473001436ED /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B7C242AD0B473001436ED /* moreViewController.swift */; };
+		D361DC262AD1E9B400E7637D /* billCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361DC242AD1E9B400E7637D /* billCell.swift */; };
+		D361DC272AD1E9B400E7637D /* billCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D361DC252AD1E9B400E7637D /* billCell.xib */; };
 		D37BBBF22AD1C0F200157712 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BBBF02AD1C0F100157712 /* Strings+Generated.swift */; };
 		D37BBBF32AD1C0F200157712 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BBBF12AD1C0F200157712 /* XCAssets+Generated.swift */; };
 		D37BBBF52AD1C16000157712 /* sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BBBF42AD1C16000157712 /* sheet.swift */; };
+		D37BBBF72AD1C30000157712 /* cardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BBBF62AD1C30000157712 /* cardViewController.swift */; };
+		D3B017402AD1E1E5008B9902 /* payBillView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B0173F2AD1E1E5008B9902 /* payBillView.storyboard */; };
+		D3B017422AD1E227008B9902 /* allBillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B017412AD1E227008B9902 /* allBillsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,9 +83,14 @@
 		D32B7C202AD0A7C3001436ED /* transActionDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transActionDetailsController.swift; sourceTree = "<group>"; };
 		D32B7C212AD0A7C3001436ED /* transActionDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transActionDetailsController.xib; sourceTree = "<group>"; };
 		D32B7C242AD0B473001436ED /* moreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
+		D361DC242AD1E9B400E7637D /* billCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = billCell.swift; sourceTree = "<group>"; };
+		D361DC252AD1E9B400E7637D /* billCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = billCell.xib; sourceTree = "<group>"; };
 		D37BBBF02AD1C0F100157712 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		D37BBBF12AD1C0F200157712 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		D37BBBF42AD1C16000157712 /* sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sheet.swift; sourceTree = "<group>"; };
+		D37BBBF62AD1C30000157712 /* cardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardViewController.swift; sourceTree = "<group>"; };
+		D3B0173F2AD1E1E5008B9902 /* payBillView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = payBillView.storyboard; sourceTree = "<group>"; };
+		D3B017412AD1E227008B9902 /* allBillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allBillsViewController.swift; sourceTree = "<group>"; };
 		F17B38D0CE6B96E9489FA95C /* Pods_myWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,7 +172,9 @@
 			children = (
 				D32B7BD12AD04337001436ED /* WalletViewController.swift */,
 				D32B7C1B2AD092BB001436ED /* transActionsHistoryViewController.swift */,
+				D37BBBF62AD1C30000157712 /* cardViewController.swift */,
 				D32B7C242AD0B473001436ED /* moreViewController.swift */,
+				D3B017412AD1E227008B9902 /* allBillsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				D32B7BD32AD04337001436ED /* Main.storyboard */,
+				D3B0173F2AD1E1E5008B9902 /* payBillView.storyboard */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -241,6 +254,7 @@
 		D32B7C0B2AD083B1001436ED /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D361DC232AD1E99E00E7637D /* billCell */,
 				D32B7C142AD08971001436ED /* transAction Cell */,
 				D32B7C0C2AD083C0001436ED /* Favourite transAction */,
 			);
@@ -281,6 +295,15 @@
 				D32B7C212AD0A7C3001436ED /* transActionDetailsController.xib */,
 			);
 			path = "Custom Sheet";
+			sourceTree = "<group>";
+		};
+		D361DC232AD1E99E00E7637D /* billCell */ = {
+			isa = PBXGroup;
+			children = (
+				D361DC242AD1E9B400E7637D /* billCell.swift */,
+				D361DC252AD1E9B400E7637D /* billCell.xib */,
+			);
+			path = billCell;
 			sourceTree = "<group>";
 		};
 		D37BBBEF2AD1C0CF00157712 /* constans */ = {
@@ -359,6 +382,7 @@
 				D32B7BED2AD0555C001436ED /* color.xcassets in Resources */,
 				D32B7BD72AD04338001436ED /* Assets.xcassets in Resources */,
 				D32B7C032AD07BA0001436ED /* Sora-Bold.ttf in Resources */,
+				D361DC272AD1E9B400E7637D /* billCell.xib in Resources */,
 				D32B7C062AD07BAF001436ED /* Sora-Light.ttf in Resources */,
 				D32B7C072AD07BB1001436ED /* Sora-Medium.ttf in Resources */,
 				D32B7C102AD083E1001436ED /* favouriteCell.xib in Resources */,
@@ -366,6 +390,7 @@
 				D32B7C052AD07BAC001436ED /* Sora-ExtraLight.ttf in Resources */,
 				D32B7C082AD07BB4001436ED /* Sora-Regular.ttf in Resources */,
 				D32B7C042AD07BAA001436ED /* Sora-ExtraBold.ttf in Resources */,
+				D3B017402AD1E1E5008B9902 /* payBillView.storyboard in Resources */,
 				D32B7C182AD08993001436ED /* transActionCell.xib in Resources */,
 				D32B7C092AD07BB7001436ED /* Sora-SemiBold.ttf in Resources */,
 				D32B7BD52AD04337001436ED /* Main.storyboard in Resources */,
@@ -449,10 +474,13 @@
 				D32B7BFF2AD05A7D001436ED /* UIView.swift in Sources */,
 				D32B7C222AD0A7C3001436ED /* transActionDetailsController.swift in Sources */,
 				D32B7C012AD05ACF001436ED /* color.swift in Sources */,
+				D37BBBF72AD1C30000157712 /* cardViewController.swift in Sources */,
 				D37BBBF52AD1C16000157712 /* sheet.swift in Sources */,
+				D3B017422AD1E227008B9902 /* allBillsViewController.swift in Sources */,
 				D32B7C1E2AD095CF001436ED /* UITextField.swift in Sources */,
 				D37BBBF32AD1C0F200157712 /* XCAssets+Generated.swift in Sources */,
 				D32B7C1C2AD092BB001436ED /* transActionsHistoryViewController.swift in Sources */,
+				D361DC262AD1E9B400E7637D /* billCell.swift in Sources */,
 				D32B7BFD2AD05A18001436ED /* Utilites.swift in Sources */,
 				D32B7C172AD08993001436ED /* transActionCell.swift in Sources */,
 				D32B7BD02AD04337001436ED /* SceneDelegate.swift in Sources */,
