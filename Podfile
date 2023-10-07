@@ -1,4 +1,4 @@
-project '/Volumes/T7 Shield/Development/iOS/myWallet/myWallet.xcodeproj'
+project 'myWallet.xcodeproj'
 
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
