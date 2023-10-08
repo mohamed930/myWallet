@@ -29,7 +29,7 @@ class allBillsViewController: UIViewController {
     
     func configureTableView() {
         tableView.register(UINib(nibName: cellIdentifer, bundle: nil), forCellReuseIdentifier: cellIdentifer)
-        tableView.rowHeight = 64.0
+        tableView.rowHeight = 60.0
     }
     
     func fetchBillsOperation() {
@@ -54,5 +54,20 @@ extension allBillsViewController: UITableViewDataSource, UITableViewDelegate {
         cell.configureUI(billsArr[indexPath.row])
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sheet = sheet(reportFlag: false,sheetSize: 444)
+        
+        sheet.openSheet(ob: self)
+    }
+}
+
+extension allBillsViewController: payProtocol {
+    func pay() {
+        dismiss(animated: true)
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "billSuccessViewController") as? billSuccessViewController else { return }
+        nextVC.modalPresentationStyle = .fullScreen
+        present(nextVC, animated: true)
     }
 }

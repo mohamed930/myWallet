@@ -44,6 +44,7 @@
 		D37BBBF32AD1C0F200157712 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BBBF12AD1C0F200157712 /* XCAssets+Generated.swift */; };
 		D37BBBF52AD1C16000157712 /* sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BBBF42AD1C16000157712 /* sheet.swift */; };
 		D37BBBF72AD1C30000157712 /* cardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BBBF62AD1C30000157712 /* cardViewController.swift */; };
+		D3928AF32AD2A03200D9A30F /* billSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3928AF22AD2A03200D9A30F /* billSuccessViewController.swift */; };
 		D3B017402AD1E1E5008B9902 /* payBillView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B0173F2AD1E1E5008B9902 /* payBillView.storyboard */; };
 		D3B017422AD1E227008B9902 /* allBillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B017412AD1E227008B9902 /* allBillsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -89,6 +90,7 @@
 		D37BBBF12AD1C0F200157712 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		D37BBBF42AD1C16000157712 /* sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sheet.swift; sourceTree = "<group>"; };
 		D37BBBF62AD1C30000157712 /* cardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardViewController.swift; sourceTree = "<group>"; };
+		D3928AF22AD2A03200D9A30F /* billSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = billSuccessViewController.swift; sourceTree = "<group>"; };
 		D3B0173F2AD1E1E5008B9902 /* payBillView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = payBillView.storyboard; sourceTree = "<group>"; };
 		D3B017412AD1E227008B9902 /* allBillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allBillsViewController.swift; sourceTree = "<group>"; };
 		F17B38D0CE6B96E9489FA95C /* Pods_myWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +177,7 @@
 				D37BBBF62AD1C30000157712 /* cardViewController.swift */,
 				D32B7C242AD0B473001436ED /* moreViewController.swift */,
 				D3B017412AD1E227008B9902 /* allBillsViewController.swift */,
+				D3928AF22AD2A03200D9A30F /* billSuccessViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				D32B7C132AD086B0001436ED /* persionModel.swift in Sources */,
 				D32B7BD22AD04337001436ED /* WalletViewController.swift in Sources */,
 				D32B7C252AD0B473001436ED /* moreViewController.swift in Sources */,
+				D3928AF32AD2A03200D9A30F /* billSuccessViewController.swift in Sources */,
 				D37BBBF22AD1C0F200157712 /* Strings+Generated.swift in Sources */,
 				D32B7BCE2AD04337001436ED /* AppDelegate.swift in Sources */,
 				D32B7BFF2AD05A7D001436ED /* UIView.swift in Sources */,

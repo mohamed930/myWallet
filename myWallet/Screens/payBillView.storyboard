@@ -13,6 +13,9 @@
         <array key="Sora-Regular.ttf">
             <string>Sora-Regular</string>
         </array>
+        <array key="Sora-SemiBold.ttf">
+            <string>Sora-SemiBold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--All Bills View Controller-->
@@ -138,13 +141,231 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="-27.455357142857142"/>
         </scene>
+        <!--Bill Success View Controller-->
+        <scene sceneID="7qc-Ih-uDX">
+            <objects>
+                <viewController storyboardIdentifier="billSuccessViewController" id="Tii-7b-e8u" customClass="billSuccessViewController" customModule="myWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dgr-aD-HUx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="billSuccess" translatesAutoresizingMaskIntoConstraints="NO" id="1fD-2X-7u6">
+                                <rect key="frame" x="125.5" y="72" width="163" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="ao0-94-Cch"/>
+                                    <constraint firstAttribute="height" constant="126" id="ioQ-Di-NJq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment done!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5C-mF-3qp">
+                                <rect key="frame" x="146" y="214" width="122.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Sora-SemiBold" family="Sora" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill payment has been done successfully" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bO2-Ty-tlV">
+                                <rect key="frame" x="75" y="257" width="264" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Sora-Regular" family="Sora" pointSize="14"/>
+                                <color key="textColor" name="Black Coral"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4X-Ek-ydY">
+                                <rect key="frame" x="16" y="342.5" width="115" height="18"/>
+                                <fontDescription key="fontDescription" name="Sora-SemiBold" family="Sora" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="307-ft-411">
+                                <rect key="frame" x="16" y="376.5" width="382" height="208"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nC1-Dh-gJX">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="64"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzD-Qf-5qi">
+                                                <rect key="frame" x="16" y="12" width="31" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Sora-Regular" family="Sora" pointSize="12"/>
+                                                <color key="textColor" red="0.47058823529999999" green="0.51372549020000002" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electricity company inc." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njr-NL-mPd">
+                                                <rect key="frame" x="16" y="27.5" width="147.5" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Sora-SemiBold" family="Sora" pointSize="12"/>
+                                                <color key="textColor" name="Black Coral"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="njr-NL-mPd" secondAttribute="trailing" constant="16" id="0qC-tU-1Iw"/>
+                                            <constraint firstItem="njr-NL-mPd" firstAttribute="top" secondItem="xzD-Qf-5qi" secondAttribute="bottom" id="Evf-Ug-uLz"/>
+                                            <constraint firstItem="xzD-Qf-5qi" firstAttribute="top" secondItem="nC1-Dh-gJX" secondAttribute="top" constant="12" id="Lpz-OA-nra"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xzD-Qf-5qi" secondAttribute="trailing" constant="16" id="WLg-WY-Ife"/>
+                                            <constraint firstItem="xzD-Qf-5qi" firstAttribute="leading" secondItem="nC1-Dh-gJX" secondAttribute="leading" constant="16" id="ZBJ-V0-O1u"/>
+                                            <constraint firstItem="njr-NL-mPd" firstAttribute="leading" secondItem="xzD-Qf-5qi" secondAttribute="leading" id="m75-pa-aTW"/>
+                                            <constraint firstAttribute="height" constant="64" id="ufp-rO-i4L"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="Alice Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ap-1L-ere">
+                                        <rect key="frame" x="0.0" y="72" width="382" height="64"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCQ-jn-eS4">
+                                                <rect key="frame" x="16" y="12" width="49.5" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Sora-Regular" family="Sora" pointSize="12"/>
+                                                <color key="textColor" red="0.47058823529999999" green="0.51372549020000002" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$132.32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2c-eq-ofH">
+                                                <rect key="frame" x="16" y="27.5" width="46.5" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Sora-SemiBold" family="Sora" pointSize="12"/>
+                                                <color key="textColor" name="Black Coral"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="gCQ-jn-eS4" firstAttribute="top" secondItem="0Ap-1L-ere" secondAttribute="top" constant="12" id="Bqm-mp-vCR"/>
+                                            <constraint firstAttribute="height" constant="64" id="Xyd-H3-sVE"/>
+                                            <constraint firstItem="G2c-eq-ofH" firstAttribute="leading" secondItem="gCQ-jn-eS4" secondAttribute="leading" id="gBJ-Hq-czL"/>
+                                            <constraint firstItem="G2c-eq-ofH" firstAttribute="top" secondItem="gCQ-jn-eS4" secondAttribute="bottom" id="haP-Cb-CqC"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gCQ-jn-eS4" secondAttribute="trailing" constant="16" id="i6A-90-0qg"/>
+                                            <constraint firstItem="gCQ-jn-eS4" firstAttribute="leading" secondItem="0Ap-1L-ere" secondAttribute="leading" constant="16" id="tIH-zm-RUG"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="G2c-eq-ofH" secondAttribute="trailing" constant="16" id="z7e-Vj-8If"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="Alice Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhb-oy-m23">
+                                        <rect key="frame" x="0.0" y="144" width="382" height="64"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction no." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ag-Ie-fXi">
+                                                <rect key="frame" x="16" y="12" width="93" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Sora-Regular" family="Sora" pointSize="12"/>
+                                                <color key="textColor" red="0.47058823529999999" green="0.51372549020000002" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23010412432431" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0U-24-Kjd">
+                                                <rect key="frame" x="16" y="27.5" width="102.5" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Sora-SemiBold" family="Sora" pointSize="12"/>
+                                                <color key="textColor" name="Black Coral"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJY-03-0Ab">
+                                                <rect key="frame" x="342" y="20" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="f77-im-QOt"/>
+                                                    <constraint firstAttribute="width" constant="24" id="jgz-IZ-e0Y"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" backgroundImage="file-copy-line"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="B0U-24-Kjd" firstAttribute="leading" secondItem="6ag-Ie-fXi" secondAttribute="leading" id="AKF-mh-mRw"/>
+                                            <constraint firstItem="6ag-Ie-fXi" firstAttribute="top" secondItem="mhb-oy-m23" secondAttribute="top" constant="12" id="C0M-3I-e1w"/>
+                                            <constraint firstItem="WJY-03-0Ab" firstAttribute="centerY" secondItem="mhb-oy-m23" secondAttribute="centerY" id="C7U-rr-KbZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="WJY-03-0Ab" secondAttribute="trailing" constant="16" id="LWk-C0-Pga"/>
+                                            <constraint firstItem="B0U-24-Kjd" firstAttribute="top" secondItem="6ag-Ie-fXi" secondAttribute="bottom" id="LqJ-0H-HZL"/>
+                                            <constraint firstItem="6ag-Ie-fXi" firstAttribute="leading" secondItem="mhb-oy-m23" secondAttribute="leading" constant="16" id="Pft-1U-268"/>
+                                            <constraint firstItem="WJY-03-0Ab" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="B0U-24-Kjd" secondAttribute="trailing" constant="16" id="ftF-cz-LKj"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6ag-Ie-fXi" secondAttribute="trailing" constant="16" id="tqd-Mz-xdv"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="border">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="Alice Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGY-d3-5Mj">
+                                <rect key="frame" x="16" y="787" width="382" height="45"/>
+                                <color key="backgroundColor" name="Ocean Blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="etx-Tw-jd2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Sora-SemiBold" family="Sora" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back to wallet">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backToHome:" destination="Tii-7b-e8u" eventType="touchUpInside" id="PaG-pt-nsv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R7R-qj-bqV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I5C-mF-3qp" firstAttribute="centerX" secondItem="1fD-2X-7u6" secondAttribute="centerX" id="8NS-xn-947"/>
+                            <constraint firstItem="R7R-qj-bqV" firstAttribute="bottom" secondItem="fGY-d3-5Mj" secondAttribute="bottom" constant="30" id="99d-nh-B9M"/>
+                            <constraint firstItem="R7R-qj-bqV" firstAttribute="trailing" secondItem="fGY-d3-5Mj" secondAttribute="trailing" constant="16" id="ASq-ms-IoV"/>
+                            <constraint firstItem="bO2-Ty-tlV" firstAttribute="centerX" secondItem="I5C-mF-3qp" secondAttribute="centerX" id="Dw5-sJ-1bZ"/>
+                            <constraint firstItem="307-ft-411" firstAttribute="leading" secondItem="R7R-qj-bqV" secondAttribute="leading" constant="16" id="Ews-rD-PHb"/>
+                            <constraint firstItem="J4X-Ek-ydY" firstAttribute="top" secondItem="bO2-Ty-tlV" secondAttribute="bottom" constant="50" id="HdF-j5-WKW"/>
+                            <constraint firstItem="R7R-qj-bqV" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="J4X-Ek-ydY" secondAttribute="trailing" constant="16" id="LeU-c4-WL9"/>
+                            <constraint firstItem="bO2-Ty-tlV" firstAttribute="top" secondItem="I5C-mF-3qp" secondAttribute="bottom" constant="22.5" id="Me8-5y-HUN"/>
+                            <constraint firstItem="R7R-qj-bqV" firstAttribute="trailing" secondItem="bO2-Ty-tlV" secondAttribute="trailing" constant="75" id="QYZ-uv-DTz"/>
+                            <constraint firstItem="R7R-qj-bqV" firstAttribute="trailing" secondItem="307-ft-411" secondAttribute="trailing" constant="16" id="Rlw-v1-p3C"/>
+                            <constraint firstItem="fGY-d3-5Mj" firstAttribute="leading" secondItem="R7R-qj-bqV" secondAttribute="leading" constant="16" id="VEw-UH-KxA"/>
+                            <constraint firstItem="307-ft-411" firstAttribute="top" secondItem="J4X-Ek-ydY" secondAttribute="bottom" constant="16" id="Zka-Oa-EXD"/>
+                            <constraint firstItem="J4X-Ek-ydY" firstAttribute="leading" secondItem="R7R-qj-bqV" secondAttribute="leading" constant="16" id="cSK-wp-UVA"/>
+                            <constraint firstItem="1fD-2X-7u6" firstAttribute="top" secondItem="R7R-qj-bqV" secondAttribute="top" constant="24" id="eCT-dM-BO9"/>
+                            <constraint firstItem="bO2-Ty-tlV" firstAttribute="leading" secondItem="R7R-qj-bqV" secondAttribute="leading" constant="75" id="l3h-tl-wgf"/>
+                            <constraint firstItem="I5C-mF-3qp" firstAttribute="top" secondItem="1fD-2X-7u6" secondAttribute="bottom" constant="16" id="p5t-uc-t8Y"/>
+                            <constraint firstItem="1fD-2X-7u6" firstAttribute="centerX" secondItem="dgr-aD-HUx" secondAttribute="centerX" id="xOu-YQ-Mbs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4w-bB-ZcA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841" y="-27"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Add" width="192" height="192"/>
         <image name="Divider" width="984" height="54"/>
+        <image name="billSuccess" width="490" height="378"/>
+        <image name="file-copy-line" width="72" height="72"/>
         <image name="search" width="48" height="48"/>
+        <namedColor name="Alice Blue">
+            <color red="0.92900002002716064" green="0.93699997663497925" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Black Coral">
             <color red="0.32499998807907104" green="0.36500000953674316" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Ocean Blue">
+            <color red="0.34099999070167542" green="0.19599999487400055" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Silver Sand">
             <color red="0.72899997234344482" green="0.76099997758865356" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

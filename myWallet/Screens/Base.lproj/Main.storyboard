@@ -550,7 +550,7 @@ View all</string>
         <!--Tab Bar Controller-->
         <scene sceneID="tYl-KV-jZw">
             <objects>
-                <tabBarController id="Bcp-G8-TEL" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="homeVC" id="Bcp-G8-TEL" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RQ4-5E-vNd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

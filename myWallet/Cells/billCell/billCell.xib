@@ -28,7 +28,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Hc-3c-rMR">
-                        <rect key="frame" x="0.0" y="0.0" width="339.66666666666669" height="54"/>
+                        <rect key="frame" x="16" y="6" width="307.66666666666669" height="54"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payBill" translatesAutoresizingMaskIntoConstraints="NO" id="Rpi-uK-GuS">
                                 <rect key="frame" x="0.0" y="11" width="32" height="32"/>
@@ -64,10 +64,10 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="9Hc-3c-rMR" secondAttribute="trailing" id="Ddb-Rd-qx1"/>
-                    <constraint firstItem="9Hc-3c-rMR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="M9P-WN-fLo"/>
-                    <constraint firstItem="9Hc-3c-rMR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="akU-0H-Ogs"/>
-                    <constraint firstAttribute="bottom" secondItem="9Hc-3c-rMR" secondAttribute="bottom" constant="12" id="egV-RD-st2"/>
+                    <constraint firstAttribute="trailing" secondItem="9Hc-3c-rMR" secondAttribute="trailing" constant="16" id="Ddb-Rd-qx1"/>
+                    <constraint firstItem="9Hc-3c-rMR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="M9P-WN-fLo"/>
+                    <constraint firstItem="9Hc-3c-rMR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="akU-0H-Ogs"/>
+                    <constraint firstAttribute="bottom" secondItem="9Hc-3c-rMR" secondAttribute="bottom" constant="6" id="egV-RD-st2"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

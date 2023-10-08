@@ -126,7 +126,7 @@ extension WalletViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sheet = sheet()
+        let sheet = sheet(reportFlag: true)
         sheet.openSheet(ob: self)
     }
 }

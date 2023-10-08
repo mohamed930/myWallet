@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol payProtocol: NSObject {
+    func pay()
+}
+
 class transActionDetailsController: UIViewController {
     
     @IBOutlet weak var transActionImageView: UIImageView!
@@ -18,11 +22,36 @@ class transActionDetailsController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var transActionNumberLabel: UILabel!
     @IBOutlet weak var transActionCopyButton: UIButton!
+    
+    @IBOutlet weak var reportProblemView: UIView!
+    @IBOutlet weak var secrueStackView: UIStackView!
+    @IBOutlet weak var secureButton: UIButton!
 
+    var flag: Bool!
+    weak var delegate: payProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        configureUI()
+    }
+    
+    func configureUI() {
+        if flag {
+            reportProblemView.isHidden = false
+            secrueStackView.isHidden = true
+            secureButton.isHidden = true
+        }
+        else {
+            reportProblemView.isHidden = true
+            secrueStackView.isHidden = false
+            secureButton.isHidden = false
+        }
+    }
+    
+    @IBAction func secureButtonAction (_ sender: Any) {
+        print("button tapped!!")
+        delegate?.pay()
     }
     
 }

@@ -68,7 +68,7 @@ extension transActionsHistoryViewController: UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        let obj = arr[indexPath.row]
         
-        let sheet = sheet()
+        let sheet = sheet(reportFlag: true)
         sheet.openSheet(ob: self)
     }
 }
