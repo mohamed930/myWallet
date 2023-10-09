@@ -12,6 +12,8 @@ import Foundation
 internal enum myStrings {
   /// Search biller
   internal static let billerPlaceHolder = myStrings.tr("Localizable", "billerPlaceHolder", fallback: "Search biller")
+  /// Search contact
+  internal static let contactPlaceHolder = myStrings.tr("Localizable", "contactPlaceHolder", fallback: "Search contact")
   /// Localizable.strings
   ///   myWallet
   /// 

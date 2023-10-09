@@ -45,6 +45,8 @@
 		D37BBBF52AD1C16000157712 /* sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BBBF42AD1C16000157712 /* sheet.swift */; };
 		D37BBBF72AD1C30000157712 /* cardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37BBBF62AD1C30000157712 /* cardViewController.swift */; };
 		D3928AF32AD2A03200D9A30F /* billSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3928AF22AD2A03200D9A30F /* billSuccessViewController.swift */; };
+		D3928AF72AD2A7F000D9A30F /* transferView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3928AF62AD2A7F000D9A30F /* transferView.storyboard */; };
+		D3928AFA2AD2A81900D9A30F /* allTransfersPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3928AF92AD2A81900D9A30F /* allTransfersPeopleViewController.swift */; };
 		D3B017402AD1E1E5008B9902 /* payBillView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B0173F2AD1E1E5008B9902 /* payBillView.storyboard */; };
 		D3B017422AD1E227008B9902 /* allBillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B017412AD1E227008B9902 /* allBillsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +93,8 @@
 		D37BBBF42AD1C16000157712 /* sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sheet.swift; sourceTree = "<group>"; };
 		D37BBBF62AD1C30000157712 /* cardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardViewController.swift; sourceTree = "<group>"; };
 		D3928AF22AD2A03200D9A30F /* billSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = billSuccessViewController.swift; sourceTree = "<group>"; };
+		D3928AF62AD2A7F000D9A30F /* transferView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = transferView.storyboard; sourceTree = "<group>"; };
+		D3928AF92AD2A81900D9A30F /* allTransfersPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allTransfersPeopleViewController.swift; sourceTree = "<group>"; };
 		D3B0173F2AD1E1E5008B9902 /* payBillView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = payBillView.storyboard; sourceTree = "<group>"; };
 		D3B017412AD1E227008B9902 /* allBillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allBillsViewController.swift; sourceTree = "<group>"; };
 		F17B38D0CE6B96E9489FA95C /* Pods_myWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,12 +176,9 @@
 		D32B7BE22AD0436C001436ED /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D32B7BD12AD04337001436ED /* WalletViewController.swift */,
-				D32B7C1B2AD092BB001436ED /* transActionsHistoryViewController.swift */,
-				D37BBBF62AD1C30000157712 /* cardViewController.swift */,
-				D32B7C242AD0B473001436ED /* moreViewController.swift */,
-				D3B017412AD1E227008B9902 /* allBillsViewController.swift */,
-				D3928AF22AD2A03200D9A30F /* billSuccessViewController.swift */,
+				D3928AF42AD2A7CE00D9A30F /* taBar Controller */,
+				D3928AF52AD2A7DB00D9A30F /* Bill Controller */,
+				D3928AF82AD2A7F900D9A30F /* transfer Controller */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,6 +208,7 @@
 			children = (
 				D32B7BD32AD04337001436ED /* Main.storyboard */,
 				D3B0173F2AD1E1E5008B9902 /* payBillView.storyboard */,
+				D3928AF62AD2A7F000D9A30F /* transferView.storyboard */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -318,6 +320,34 @@
 			path = constans;
 			sourceTree = "<group>";
 		};
+		D3928AF42AD2A7CE00D9A30F /* taBar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D32B7BD12AD04337001436ED /* WalletViewController.swift */,
+				D32B7C1B2AD092BB001436ED /* transActionsHistoryViewController.swift */,
+				D37BBBF62AD1C30000157712 /* cardViewController.swift */,
+				D32B7C242AD0B473001436ED /* moreViewController.swift */,
+			);
+			path = "taBar Controller";
+			sourceTree = "<group>";
+		};
+		D3928AF52AD2A7DB00D9A30F /* Bill Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3B017412AD1E227008B9902 /* allBillsViewController.swift */,
+				D3928AF22AD2A03200D9A30F /* billSuccessViewController.swift */,
+			);
+			path = "Bill Controller";
+			sourceTree = "<group>";
+		};
+		D3928AF82AD2A7F900D9A30F /* transfer Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3928AF92AD2A81900D9A30F /* allTransfersPeopleViewController.swift */,
+			);
+			path = "transfer Controller";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -394,6 +424,7 @@
 				D32B7C082AD07BB4001436ED /* Sora-Regular.ttf in Resources */,
 				D32B7C042AD07BAA001436ED /* Sora-ExtraBold.ttf in Resources */,
 				D3B017402AD1E1E5008B9902 /* payBillView.storyboard in Resources */,
+				D3928AF72AD2A7F000D9A30F /* transferView.storyboard in Resources */,
 				D32B7C182AD08993001436ED /* transActionCell.xib in Resources */,
 				D32B7C092AD07BB7001436ED /* Sora-SemiBold.ttf in Resources */,
 				D32B7BD52AD04337001436ED /* Main.storyboard in Resources */,
@@ -475,6 +506,7 @@
 				D3928AF32AD2A03200D9A30F /* billSuccessViewController.swift in Sources */,
 				D37BBBF22AD1C0F200157712 /* Strings+Generated.swift in Sources */,
 				D32B7BCE2AD04337001436ED /* AppDelegate.swift in Sources */,
+				D3928AFA2AD2A81900D9A30F /* allTransfersPeopleViewController.swift in Sources */,
 				D32B7BFF2AD05A7D001436ED /* UIView.swift in Sources */,
 				D32B7C222AD0A7C3001436ED /* transActionDetailsController.swift in Sources */,
 				D32B7C012AD05ACF001436ED /* color.swift in Sources */,
